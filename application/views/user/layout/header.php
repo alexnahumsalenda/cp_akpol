@@ -16,8 +16,8 @@
             <ul
               class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
             >
-              <li class="active"><a href="index.html">Beranda</a></li>
-              <li class="has-children">
+              <li class="<?php if($active=='Beranda'){ echo 'active'; } ?>"><a href="<?= base_url() ?>">Beranda</a></li>
+              <li class="has-children <?php if($active=='profil'){ echo 'active'; } ?>">
                 <a href="properties.html">Profil</a>
                 <ul class="dropdown">
                   <li><a href="<?= base_url() ?>profil">Visi Misi</a></li>

@@ -5,8 +5,9 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$data = array(	'title' => 'Home',
-						'isi'	=> 'user/home/list' );
+		$data = array(	'title' 	=> 'Home',
+						'active'	=> 'Beranda',
+						'isi'		=> 'user/home/list' );
 		$this->load->view('user/layout/wrapper', $data, FALSE);
 	}
 
